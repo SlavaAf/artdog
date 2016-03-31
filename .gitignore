@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+/db.sqlite3
+/page/migrations
+.idea
+/static/node_modules
+/static/*.png
+/static/*.jpg
+/static/*.jpeg
+/static/.DS_Store
+*.pyc
+.DS_Store

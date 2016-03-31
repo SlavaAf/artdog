@@ -1,0 +1,116 @@
+
+@font-face {
+    /*font-family: "lintel-5";*/
+    /*src: url("../fonts/Lintel/LintelMedium.ttf");*/
+    /*font-weight: normal;*/
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /*font-family: Lintel;*/
+  font-family: 'PT Sans';
+  margin-bottom: 170px;
+  background-color: #FFFFFF;
+}
+/*----------------------header-----------------------*/
+header{
+  width: 100%;
+  float: left;
+  .nav_top{
+    background: url("../images/x_back_1440.png") no-repeat left top;
+    background-size: 100% 100%;
+    height: 150px;
+    padding-top: 40px;
+    .logo{
+      margin-top: -25px;
+      img{
+        width: 100%;
+      }
+    }
+    .info{
+      padding-top: 8px;
+      span{
+        padding-left: 25px;
+        padding-bottom: 5px;
+        /*padding-top: 3px;*/
+        font-weight: 500;
+        font-size: 31px;
+        color: #fff;
+        /*margin-left: 25px;*/
+        float: left;
+        display: block;
+        width: auto;
+      }
+      .call{
+        background: url("../images/marker_call.png") no-repeat left top;
+        background-size: 20px auto;
+        margin-right: 30px;
+        margin-left: 50px;
+      }
+      .mail{
+        background: url("../images/marker_mail.png") no-repeat left top;
+        background-size: 20px auto;
+      }
+    }
+    .soc{
+      border: 3px solid #fff;
+      border-top: none;
+      border-bottom: none;
+      text-align: center;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      img{
+        width: 30px;
+        height: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+    .pl{
+      padding-top: 3px;
+      padding-right: 0;
+      padding-left: 25px;
+      span{
+        font-weight: bold;
+        font-size: 24px;
+        color: #586878;
+        background: url("../images/marker_bone.png") no-repeat left top;
+        background-size: 26px auto;
+        display: block;
+        padding-left: 40px;
+        padding-top: 5px;
+        line-height: 1;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  .nav_menu{
+    a{
+      font-size: 24px;
+      color: #85d1d3;
+      text-transform: uppercase;
+      padding-top: 10px;
+      padding-bottom: 25px;
+      text-align: center;
+    }
+    a:hover{
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 5px solid #f2d90f;
+    }
+  }
+}
+/*----------------------footer-----------------------*/
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 160px;
+  background-color: black;
+}
+/*----------------------content-----------------------*/
