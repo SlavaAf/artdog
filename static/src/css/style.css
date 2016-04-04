@@ -18,14 +18,6 @@ body {
   font-family: 'PT Sans';
   background-color: rgb(237,234,239);
 }
-
-/*.active{
-  padding-top: 10px;
-  padding-bottom: 0px;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: solid 5px rgb(242,217,15);
-}*/
 /* base template (header and footer)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .vertical-align-middle {
@@ -200,6 +192,13 @@ background-color: rgb(137,210,213);
           font-size: 13pt;
           font-family: 'PT Sans', sans-serif;
           color: white;
+        }
+        .active{
+          padding-top: 10px;
+          padding-bottom: 0px;
+          font-weight: bold;
+          text-decoration: none;
+          border-bottom: solid 5px rgb(242,217,15);
         }
         a:hover{
           padding-bottom: 5px;
