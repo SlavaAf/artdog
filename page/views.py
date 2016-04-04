@@ -16,7 +16,7 @@ def contacts_view(request):
     return render(request, 'contacts.html', {'object_list': object_list})
 
 
-def photoandvideo_view(request):
+def photo_and_video_view(request):
     object_list = []
     return render(request, 'fotoandvideo.html', {'object_list': object_list})
 

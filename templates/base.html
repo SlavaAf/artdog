@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <title>ArtDog</title>
+    <title>
+        {% block title %}
+            Главная
+        {% endblock %}
+        | ArtDog
+    </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,7 +34,7 @@
 				<div class="row">
 				  <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 vcenter">
 						<div class="logo ">
-							<a href="/index.html">
+							<a href="{% url 'index' %}">
 								<img src="{{ STATIC_URL }}images/logo.png">
 							</a>
 						</div>
@@ -54,9 +59,9 @@
 					</div>
 				  <div class="col-lg-2 col-md-2 col-md-pull-2 col-sm-12 col-xs-12 vcenter">
 						<div class="buttons row">
-							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_inst.png" alt="" /></a>
-							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_vk.png" alt="" /></a>
-							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_yout.png" alt="" /></a>
+							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_inst.png" alt="instagram" /></a>
+							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_vk.png" alt="vk" /></a>
+							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_yout.png" alt="youtube" /></a>
 						</div>
 					</div>
 				</div>
@@ -65,20 +70,38 @@
 		<div class="menu">
 		  <div class="container">
 		    <ul class="row">
-		      <li class="active col-md-2 col-sm-4"><a href="#">НАШИ УСЛУГИ</a></li>
-		      <li class="col-md-2 col-sm-4 col-xs-12"><a href="#">КОНТАКТЫ</a></li>
-		      <li class="col-md-2 col-sm-4 col-xs-12"><a href="#">ОТЗЫВЫ</a></li>
-					<li class="col-md-2 col-sm-4 col-xs-12">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-							ФОТО И ВИДЕО
-						</a>
-    				<ul class="dropdown-menu">
-							<li class="col-md-12 col-sm-12 col-xs-12 inner"><a href="#">ФОТОГРАФИИ</a></li>
-				      <li class="col-md-12 col-sm-12 col-xs-12 inner"><a href="#">ВИДЕО</a></li>
-    				</ul>
-					</li>
-					<li class="col-md-2 col-sm-4 col-xs-12"><a href="#">НОВОСТИ</a></li>
-					<li class="col-md-2 col-sm-4 col-xs-12"><a href="#">О НАС</a></li>
+                <li class="col-md-2 col-sm-4">
+                    {% url 'services' as url_index %}
+                    {% include 'includes/_menu_link.html' with url=url_index title='НАШИ УСЛУГИ'  %}
+{#                    <a href="#">НАШИ УСЛУГИ</a>#}
+                </li>
+                <li class="col-md-2 col-sm-4 col-xs-12">
+                    {% url 'contacts' as url_index %}
+                    {% include 'includes/_menu_link.html' with url=url_index title='КОНТАКТЫ'  %}
+{#                    <a href="#">КОНТАКТЫ</a>#}
+                </li>
+                <li class="col-md-2 col-sm-4 col-xs-12">
+                    {% url 'reviews' as url_index %}
+                    {% include 'includes/_menu_link.html' with url=url_index title='ОТЗЫВЫ'  %}
+{#                    <a href="#">ОТЗЫВЫ</a>#}
+                </li>
+                <li class="col-md-2 col-sm-4 col-xs-12">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ФОТО И ВИДЕО</a>
+                    <ul class="dropdown-menu">
+                        <li class="col-md-12 col-sm-12 col-xs-12 inner"><a href="#">ФОТОГРАФИИ</a></li>
+                        <li class="col-md-12 col-sm-12 col-xs-12 inner"><a href="#">ВИДЕО</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-2 col-sm-4 col-xs-12">
+                    {% url 'news' as url_index %}
+                    {% include 'includes/_menu_link.html' with url=url_index title='НОВОСТИ'  %}
+{#                    <a href="#">НОВОСТИ</a>#}
+                </li>
+                <li class="col-md-2 col-sm-4 col-xs-12">
+                    {% url 'about' as url_index %}
+                    {% include 'includes/_menu_link.html' with url=url_index title='О НАС'  %}
+{#                    <a href="#">О НАС</a>#}
+                </li>
 		    </ul>
 		  </div>
 		</div>
@@ -89,27 +112,47 @@
     </div>
 
     <footer>
-			<div class="menu">
-				<div class="container">
-					<ul class="row">
-			      <li class="active col-md-2 col-sm-4"><a href="#">НАШИ УСЛУГИ</a></li>
-			      <li class="col-md-2 col-sm-4 col-xs-12"><a href="#">КОНТАКТЫ</a></li>
-			      <li class="col-md-2 col-sm-4 col-xs-12"><a href="#">ОТЗЫВЫ</a></li>
-						<li class="col-md-2 col-sm-4 col-xs-12">
-							<a href="#">
-								ФОТО И ВИДЕО
-							</a>
-						</li>
-						<li class="col-md-2 col-sm-4 col-xs-12"><a href="#">НОВОСТИ</a></li>
-						<li class="col-md-2 col-sm-4 col-xs-12"><a href="#">О НАС</a></li>
-			    </ul>
-				</div>
-			</div>
+        <div class="menu">
+            <div class="container">
+                <ul class="row">
+                    <li class="col-md-2 col-sm-4 col-xs-12">
+                        {% url 'services' as url_index %}
+                        {% include 'includes/_menu_link.html' with url=url_index title='НАШИ УСЛУГИ'  %}
+{#                        <a href="#">НАШИ УСЛУГИ</a>#}
+                    </li>
+                    <li class="col-md-2 col-sm-4 col-xs-12">
+                        {% url 'contacts' as url_index %}
+                        {% include 'includes/_menu_link.html' with url=url_index title='КОНТАКТЫ'  %}
+{#                        <a href="#">КОНТАКТЫ</a>#}
+                    </li>
+                    <li class="col-md-2 col-sm-4 col-xs-12">
+                        {% url 'reviews' as url_index %}
+                        {% include 'includes/_menu_link.html' with url=url_index title='ОТЗЫВЫ'  %}
+{#                        <a href="#">ОТЗЫВЫ</a>#}
+                    </li>
+                    <li class="col-md-2 col-sm-4 col-xs-12">
+                        {% url 'photo_and_video' as url_index %}
+                        {% include 'includes/_menu_link.html' with url=url_index title='ФОТО И ВИДЕО'  %}
+{#                        <a href="#">ФОТО И ВИДЕО</a>#}
+                    </li>
+                    <li class="col-md-2 col-sm-4 col-xs-12">
+                        {% url 'news' as url_index %}
+                        {% include 'includes/_menu_link.html' with url=url_index title='НОВОСТИ'  %}
+{#                        <a href="#">НОВОСТИ</a>#}
+                    </li>
+                    <li class="col-md-2 col-sm-4 col-xs-12">
+                        {% url 'about' as url_index %}
+                        {% include 'includes/_menu_link.html' with url=url_index title='О НАС'  %}
+{#                        <a href="#">О НАС</a>#}
+                    </li>
+                </ul>
+            </div>
+        </div>
 			<div class="container">
 				<div class="row">
 				  <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-xs-12 vcenter">
 						<div class="logo ">
-							<a href="/index.html">
+							<a href="{% url 'index' %}">
 								<img src="{{ STATIC_URL }}images/logo.png">
 							</a>
 						</div>
@@ -134,9 +177,9 @@
 					</div>
 				  <div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12 vcenter">
 						<div class="buttons row">
-							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_inst.png" alt="" /></a>
-							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_vk.png" alt="" /></a>
-							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_yout.png" alt="" /></a>
+							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_inst.png" alt="instagram" /></a>
+							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_vk.png" alt="vk" /></a>
+							<a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_yout.png" alt="youtube" /></a>
 						</div>
 					</div>
 					<a href="">

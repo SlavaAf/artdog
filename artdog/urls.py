@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', index_view, name='index'),
     url(r'^contacts/$', contacts_view, name='contacts'),
-    url(r'^photo-and-video/$', photoandvideo_view, name='photo_and_video'),
+    url(r'^photo-and-video/$', photo_and_video_view, name='photo_and_video'),
     url(r'^news/$', news_view, name='news'),
     url(r'^services/$', services_view, name='services'),
     url(r'^reviews/$', reviews_view, name='reviews'),
