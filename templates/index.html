@@ -4,7 +4,7 @@
 {% endblock %}
 {% block content %}
 <div class="index">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
 
@@ -130,9 +130,50 @@
           <h3>О НАС</h3>
           <div class="line"></div>
         </div>
-        <span>Приветствуем Вас в нашей школе дрессировки и развития собак ArtDog! Цель нашей работы – избавить или предотвратить проблемы с воспитанием собаки в короткий срок и с наилучшим результатом. Научить Вас понимать своего питомца и сделать свою жизнь и жизнь своей собаки более насыщенной и комфортной. 
+        <span>Приветствуем Вас в нашей школе дрессировки и развития собак ArtDog! Цель нашей работы – избавить или предотвратить проблемы с воспитанием собаки в короткий срок и с наилучшим результатом. Научить Вас понимать своего питомца и сделать свою жизнь и жизнь своей собаки более насыщенной и комфортной. <br><br>Основным принципом работы является индивидуальный подход как к собаке и ее владельцу. Дрессировки строятся на основах лучших мировых и отечественных методиках обучения собак. Чаще всего на занятиях используем бесконфликтный метод дрессировки , то есть работаем на желании собаки, таким образом дрессировщик и собака получают взаимное удовлетворение и радость от совместно проведенного занятия! </span>
 
-  Основным принципом работы является индивидуальный подход как к собаке и ее владельцу. Дрессировки строятся на основах лучших мировых и отечественных методиках обучения собак. Чаще всего на занятиях используем бесконфликтный метод дрессировки , то есть работаем на желании собаки, таким образом дрессировщик и собака получают взаимное удовлетворение и радость от совместно проведенного занятия! </span>
+      </div>
+    </div>
+    <div class="training">
+      <div class="container">
+        <div class="caption">
+          <h3>Тренировки</h3>
+          <div class="line"></div>
+        </div>
+        <div class="photos">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel2" data-slide-to="1"></li>
+              <li data-target="#myCarousel2" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="{{STATIC_URL}}images/trainings_photo.png" alt="Chania">
+              </div>
+
+              <div class="item">
+                <img src="{{STATIC_URL}}images/trainings_photo.png" alt="Chania">
+              </div>
+
+              <div class="item">
+                <img src="{{STATIC_URL}}images/trainings_photo.png" alt="Flower">
+              </div>
+            </div>
+          </div>
+          <a href="">
+            <span>ПЕРЕЙТИ В ФОТОАЛЬБОМ</span>
+          </a>
+        </div>
+        <div class="videos">
+          <img src="{{STATIC_URL}}images/trainings_video.png" alt="" />
+          <a href="">
+            <span>ВСЕ ВИДЕОЗАПИСИ</span>
+          </a>
+        </div>
 
       </div>
     </div>

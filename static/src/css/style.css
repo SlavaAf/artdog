@@ -302,7 +302,7 @@ background-color: rgb(137,210,213);
 /* index template
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .index{
-  .carousel{
+  .banner{
     background-image: linear-gradient(180deg,#edeaef,#f2f2f2);
     .item{
       >img{
@@ -398,6 +398,59 @@ background-color: rgb(137,210,213);
     }
   }
 }
+.training{
+  background-color: white;
+  color: #596979;
+  text-align: center;
+  padding-top: 10px;
+  .line{
+    border-bottom: 3px solid #89d2d5;
+    width: 150px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  h3{
+    margin-bottom: 0;
+  }
+  span{
+    display: inline-block;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+  }
+  .photos{
+    float:left;
+    width: 49%;
+    background-color: #f5f7f8;
+    a{
+      display: inline-block;
+      background-color: #89d2d5;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14pt;
+    }
+  }
+  .videos{
+    float: right;
+    width: 49%;
+    background-color: #f5f7f8;
+    img{
+      width: 561px;
+    }
+    a{
+      display: inline-block;
+      background-color: #f2d90f;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14pt;
+    }
+  }
+}
+
 /* about template
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* contacts template
