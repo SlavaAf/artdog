@@ -1,13 +1,17 @@
+/* base elements
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @font-face {
     /*font-family: "lintel-5";*/
     /*src: url("../fonts/Lintel/LintelMedium.ttf");*/
     /*font-weight: normal;*/
 }
+
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   min-height: 500px;
   /*font-family: Lintel;*/
@@ -15,10 +19,13 @@ body {
   background-color: #FFFFFF;
 
 }
-/*----------------------header-----------------------*/
+
 body{
   background: rgb(237,234,239);
 }
+
+/* base template (header and footer)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .main{
   width: 100%;
   padding: 0;
@@ -365,3 +372,20 @@ footer{
 @media(min-width:1200px){
 
 }
+
+/* index template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* about template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* contacts template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* foto and video template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* news template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* reviews template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* services template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* modal template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
