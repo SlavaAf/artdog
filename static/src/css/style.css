@@ -31,10 +31,10 @@ header {
   min-height: 144px;
   padding-bottom: 32px;
   background-color: rgb(255, 255, 255);
-  background-image: url("../images/x_back.png"), url("../images/x_back_border.png");;
-  background-repeat: repeat, repeat-x;
-  background-clip: content-box, border-box;
-  background-position: 0% 0%,0% 99%;
+  background-image:  url("../images/x_back_border.png"),url("../images/x_back.png");
+  background-repeat: repeat-x, repeat;
+  background-clip: border-box, border-box;
+  background-position: 0% 100%,0% 0%;
   .container{
     padding-top: 20px;
   }
@@ -521,7 +521,61 @@ text-align: center;
       float: right;
     }
     h3{
-      margin-bottom: 0;
+      margin-bottom: 20px;
+    }
+    .carousel{
+      background-color: #f5f7f8;
+      height: 420px;
+      .carousel-inner{
+        height: 420px;
+      }
+      .item{
+        .carousel-caption{
+          left:35%;
+          text-align: justify;
+          color: #586878;
+          right: 10%;
+          padding: 0px 0px;
+          margin-top: 100px;
+          margin-bottom: -60px;
+          font-family: 'PT Sans', sans-serif;
+          font-size: 12pt;
+          text-shadow:none;
+          span{
+            display: block;
+            padding-top: 15px;
+            height: 250px;
+            display: inline-block;
+          }
+          p{
+            color: #a3dbdd;
+            font-size: 14pt;
+            padding-top: 20px;
+          }
+          .name{
+            float: left;
+          }
+          .date{
+            float: right;
+          }
+        }
+        img{
+          display: block;
+          margin-top: 80px;
+          margin-left: 120px;
+          border: 10px solid #586878;
+          height: 250px;
+          width: 250px;
+          border-radius: 1000px;
+        }
+      }
+      .carousel-control{
+        background-image: none;
+        img{
+          position: absolute;
+          top: 50%;
+        }
+      }
     }
     .button{
       display: inline-block;
@@ -532,6 +586,96 @@ text-align: center;
       margin: 10px;
       font-family: 'Roboto', sans-serif;
       font-size: 14pt;
+    }
+  }
+  .news{
+    background-color: white;
+    color: #596979;
+    text-align: center;
+    padding-top: 10px;
+    .line{
+      border-bottom: 3px solid #f4825d;
+      width: 150px;
+      display: inline-block;
+    }
+    h3{
+      margin-bottom: 0;
+    }
+    .button{
+      display: inline-block;
+      text-decoration: none;
+      background-color: #f4825d;
+      color: white;
+      padding: 20px;
+      margin: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14pt;
+    }
+    .row{
+      .label{
+        text-align: left;
+        height: 160px;
+        position: absolute;
+        background-color: #f4825d;
+        z-index: 5;
+        left: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        h3{
+          margin-left: 40px;
+          margin-right: 40px;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          display: inline-block;
+          border-bottom: 2px solid white;
+        }
+        span{
+          font-size: 14pt;
+          display: inherit;
+          margin-left: 40px;
+          margin-right: 40px;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+        }
+        .date{
+          margin-top: 20px;
+        }
+      }
+      .label2{
+        text-align: left;
+
+        h3{
+          min-height: 1em;
+          min-width: 90%;
+          margin-left: 20px;
+          margin-right: 20px;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          display: inline-block;
+          border-bottom: 2px solid #5ac3b7;
+        }
+        span{
+          font-size: 14pt;
+          display: inherit;
+          margin-left: 20px;
+          margin-right: 20px;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+        }
+        .date{
+          margin-top: 0px;
+          margin-bottom: 0px;
+          padding-bottom: 0;
+        }
+      }
+      >div{
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+      }
+      img{
+        width: 100%;
+      }
     }
   }
 }

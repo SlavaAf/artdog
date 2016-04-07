@@ -5,11 +5,6 @@
 {% block content %}
 <div class="index">
   <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-
-      </ol>
-
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
 
@@ -187,53 +182,118 @@
 
       </div>
     </div>
+    <div class="news">
+      <div class="container">
+        <div class="caption">
+          <img src="{{STATIC_URL}}images/i_news.png" alt="" />
+          <h3>НОВОСТИ</h3>
+          <div class="line"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <img src="{{STATIC_URL}}images/news_dog_1.png" alt="" />
+            <div class="label">
+              <h3>НОВЫЕ ВИДЕО НАШЕЙ ШКОЛЫ!</h3>
+              <span>вы можете просмотреть новые видео<br>с резудьтатами наших маленьких учеников</span>
+              <span class="date">17.01.2016</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="{{STATIC_URL}}images/news_dog_2.png" alt="" />
+            <div class="label2">
+              <h3>НОВЫЕ ВИДЕО НАШЕЙ ШКОЛЫ!</h3>
+              <span>пополнился наш раздел с фотографиями четвероногих клиентов!</span>
+              <span class="date">17.01.2016</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{STATIC_URL}}images/news_dog_3.png" alt="" />
+            <div class="label2">
+              <h3>НОВЫЕ ФОТОГРАФИИ В РАЗДЕЛЕ НАШИ КЛИЕНТЫ!</h3>
+              <span>пополнился наш раздел с фотографиями</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="{{STATIC_URL}}images/news_dog_4.png" alt="" />
+            <div class="label2">
+              <h3></h3>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="{{STATIC_URL}}images/news_dog_5.png" alt="" />
+            <div class="label2">
+              <h3>НОВЫЕ ФОТОГРАФИИ В РАЗДЕЛЕ НАШИ КЛИЕНТЫ!</h3>
+              <span>пополнился наш раздел с фотографиями</span>
+            </div>
+          </div>
+
+        </div>
+        <a href="" class="button">
+          <span>ВСЕ НОВОСТИ</span>
+        </a>
+      </div>
+    </div>
     <div class="reviews">
       <div class="container">
         <div class="caption">
           <img src="{{STATIC_URL}}images/reviews.png" alt="" />
           <h3><div class="line l"></div>ОТЗЫВЫ<div class="line r"></div></h3>
         </div>
-        <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-
-            </ol>
+        <div id="myCarousel3" class="carousel slide" data-ride="carousel">
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
 
               <div class="item active">
-                <img src="{{ STATIC_URL }}images/dog_head.png" alt="Chania" width="874" height="513">
+                <img src="{{ STATIC_URL }}images/reviews_girl.png">
                 <div class="carousel-caption">
                   <div class="inner">
-                    <img src="{{ STATIC_URL }}images/footprint2.png" alt="" />
-                    <h3>Групповые занятия<br>каждую субботу</h3>
-                    <p>-отучение от подбора еды с земли</p>
-                    <p>-общий курс послушания</p>
+                    <span>Все хозяева собак абсолютно правы, давая оценку профессионализма Владимира Алмазова !!! Он одарённый кинолог, любящий всем сердцем своих питомцев, с которыми занимается !!! Моя собака-очень сложный случай, - покупала щенка Кане Корсо, а щеночек оказался помесь Кане Корсо с Питбулем !!! Представляете, какая атомная смесь !!! Мою собаку в 4 месяца покусала взрослая овчарка без намордника с нетрезвым хозяином, как раз в тот период, когда формируется характер щенка !!! Она, взрослея, становилась всё агрессивнее !!! Дрессировке со мной она практически не поддавалась, и я обратилась к Владимиру !!! Это было ЧУДО, когда за одно занятие он научил её сидеть на "выдержке"!!! Приносить всегда мяч !!! Собака боялась высоты, и Владимир научил её ходить по бревну !!!</span>
+                    <div>
+                      <p class="name">
+                        Евгения Ушакова
+                      </p>
+                      <p class="date">
+                        13.03.16
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div class="item">
-                <img src="{{ STATIC_URL }}images/dog_head.png" alt="Chania" width="874" height="513">
+                <img src="{{ STATIC_URL }}images/reviews_girl.png">
                 <div class="carousel-caption">
                   <div class="inner">
-                    <img src="{{ STATIC_URL }}images/footprint2.png" alt="" />
-                    <h3>Групповые занятия<br>каждую субботу</h3>
-                    <p>-отучение от подбора еды с земли</p>
-                    <p>-общий курс послушания</p>
+                    <span>Все хозяева собак абсолютно правы, давая оценку профессионализма Владимира Алмазова !!! Он одарённый кинолог, любящий всем сердцем своих питомцев, с которыми занимается !!! Моя собака-очень сложный случай, - покупала щенка Кане Корсо, а щеночек оказался помесь Кане Корсо с Питбулем !!! Представляете, какая атомная смесь !!! Мою собаку в 4 месяца покусала взрослая овчарка без намордника с нетрезвым хозяином, как раз в тот период, когда формируется характер щенка !!! Она, взрослея, становилась всё агрессивнее !!! Дрессировке со мной она практически не поддавалась, и я обратилась к Владимиру !!! Это было ЧУДО, когда за одно занятие он научил её сидеть на "выдержке"!!! Приносить всегда мяч !!! Собака боялась высоты, и Владимир научил её ходить по бревну !!!</span>
+                    <div>
+                      <p class="name">
+                        Евгения Ушакова
+                      </p>
+                      <p class="date">
+                        13.03.16
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div class="item">
-                <img src="{{ STATIC_URL }}images/dog_head.png" alt="Chania" width="874" height="513">
+                <img src="{{ STATIC_URL }}images/reviews_girl.png">
                 <div class="carousel-caption">
                   <div class="inner">
-                    <img src="{{ STATIC_URL }}images/footprint2.png" alt="" />
-                    <h3>Групповые занятия<br>каждую субботу</h3>
-                    <p>-отучение от подбора еды с земли</p>
-                    <p>-общий курс послушания</p>
+                    <span>Все хозяева собак абсолютно правы, давая оценку профессионализма Владимира Алмазова !!! Он одарённый кинолог, любящий всем сердцем своих питомцев, с которыми занимается !!! Моя собака-очень сложный случай, - покупала щенка Кане Корсо, а щеночек оказался помесь Кане Корсо с Питбулем !!! Представляете, какая атомная смесь !!! Мою собаку в 4 месяца покусала взрослая овчарка без намордника с нетрезвым хозяином, как раз в тот период, когда формируется характер щенка !!! Она, взрослея, становилась всё агрессивнее !!! Дрессировке со мной она практически не поддавалась, и я обратилась к Владимиру !!! Это было ЧУДО, когда за одно занятие он научил её сидеть на "выдержке"!!! Приносить всегда мяч !!! Собака боялась высоты, и Владимир научил её ходить по бревну !!!</span>
+                    <div>
+                      <p class="name">
+                        Евгения Ушакова
+                      </p>
+                      <p class="date">
+                        13.03.16
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -243,18 +303,20 @@
             </div>
 
             <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
               <img src="{{STATIC_URL}}images/arrow_left.png" alt="" />
             </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
               <img src="{{STATIC_URL}}images/arrow_right_hover.png" alt="" />
             </a>
           </div>
         <a href="" class="button">
           <span>ОСТАВИТЬ ОТЗЫВ</span>
         </a>
+      </div>
     </div>
-</div>
+
+  </div>
 
 
 {% endblock %}
