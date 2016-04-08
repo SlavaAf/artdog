@@ -385,6 +385,7 @@ text-align: center;
     }
     .element{
       .dropdown{
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
         display: none;
         z-index: 2;
         position: absolute;
@@ -436,6 +437,9 @@ text-align: center;
     color: #596979;
     text-align: center;
     padding-top: 10px;
+    .container{
+      width: 850px;
+    }
     .line{
       border-bottom: 3px solid #f4825d;
       width: 150px;
@@ -448,7 +452,9 @@ text-align: center;
       display: inline-block;
       text-align: justify;
       font-family: 'Roboto', sans-serif;
-      font-size: 16pt;
+      font-size: 14pt;
+      margin-top: 20px;
+      margin-bottom: 40px;
     }
   }
   .training{
@@ -608,12 +614,13 @@ text-align: center;
     }
   }
   .news{
+    margin-top: 30px;
     background-color: white;
     color: #596979;
     text-align: center;
     padding-top: 10px;
     .dropdown{
-      height: 435px;
+      height: 422px;
     }
     .dropdown:hover{
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -671,7 +678,7 @@ text-align: center;
           margin-bottom: 10px;
         }
         .date{
-          margin-top: 20px;
+          margin-top: 10px;
         }
       }
       .label2{
@@ -699,7 +706,7 @@ text-align: center;
           margin-top: 0px;
           margin-bottom: 0px;
           padding-bottom: 5px;
-          padding-top: 20px;
+          padding-top: 10px;
           display: none;
         }
       }
