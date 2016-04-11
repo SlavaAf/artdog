@@ -19,7 +19,7 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   text-transform:uppercase}.prew button:focus{
   outline:0}.breadcrumb{margin-top:30px;margin-bottom:55px;background-color:inherit}.breadcrumb li+li:before{
   content:">"}.breadcrumb .active,.breadcrumb a{
-  color:#828283}.vertical-align-middle{display:inline-block;vertical-align:middle;float:none;margin-right:-4px}header{text-align:center;min-height:9pc;padding-bottom:2pc;background-color:#fff;background-image:url(../images/x_back_border.png),url(../images/x_back.png);background-repeat:repeat-x,repeat;background-clip:border-box,border-box;background-position:0 100%,0 0}header .container{
+  color:#828283}.main-container{background-image:url(../images/m_back.png);background-size:100%;background-repeat:no-repeat;background-position-y:830px;background-position-x:center}.vertical-align-middle{display:inline-block;vertical-align:middle;float:none;margin-right:-4px}header{text-align:center;min-height:9pc;padding-bottom:2pc;background-color:#fff;background-image:url(../images/x_back_border.png),url(../images/x_back.png);background-repeat:repeat-x,repeat;background-clip:border-box,border-box;background-position:0 100%,0 0}header .container{
   padding-top:20px}header .contacts .element{
   display:inline-block;
   background-repeat:no-repeat;
@@ -198,7 +198,6 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   top:50%}.index .services{
   text-align:center;
   padding-top:10px;
-  background-color:#fff;
   padding-bottom:90pt}.index .services .line{
   border-bottom:3px solid #89d2d5;
   width:150px;
@@ -247,7 +246,6 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   font-size:14pt;
   margin-top:20px;
   margin-bottom:40px}.index .training{
-  background-color:#fff;
   color:#596979;
   text-align:center;
   padding-top:10px}.index .training .line{
@@ -286,7 +284,6 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   font-family:PT Sans,sans-serif;
   font-weight:300;
   font-size:1pc}.index .reviews{
-  background-color:#fff;
   color:#596979;
   text-align:center;
   padding-top:10px}.index .reviews .line{
@@ -346,7 +343,6 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   padding-top:5px;
   padding-left:20px}.index .news{
   margin-top:30px;
-  background-color:#fff;
   color:#596979;
   text-align:center;
   padding-top:10px}.index .news .dropdown{
@@ -462,7 +458,45 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   margin-left:auto;
   margin-right:auto;
   padding-top:22px}.about_main .our_clients a:focus,.about_main .our_clients a:hover{
-  text-decoration:none}.foto_main{margin-bottom:5pc}.foto_main a img{
+  text-decoration:none}.contacts{text-align:center}.contacts .banner{
+  width:100%;
+  text-align:center;
+  background-color:#e2e5e7;
+  position:relative}.contacts .banner .caption{
+  bottom:-4em;
+  width:50%;
+  left:25%;
+  background-color:#f2d90f;
+  position:absolute;
+  height:75pt;
+  vertical-align:middle}.contacts .banner .caption h3{
+  margin-top:1.5em;
+  display:inline-block;
+  padding-bottom:5px;
+  border-bottom:3px dotted #fff;
+  color:#fff}.contacts .path{
+  text-align:left;
+  margin-top:5pc}.contacts .marker{
+  position:relative;
+  display:inline-block;
+  background-color:#3ccfcf;
+  border-radius:75pt;
+  width:36px;
+  height:36px;
+  padding:10px}.contacts .marker img{
+  position:absolute;
+  left:7px;
+  top:7px;
+  -webkit-filter:brightness(100) saturate(0) contrast(100)}.contacts .buttons{
+  display:inline-block;
+  width:250px}.contacts .buttons .button img{
+  -webkit-filter:hue-rotate(115deg) contrast(0.62)}.contacts .map{
+  width:100%}.contacts .comm{
+  margin-bottom:40px;
+  background-color:#89d2d5}.contacts .comm h3{
+  border-bottom:2px solid #fff}.contacts .comm input{
+  display:inline-block;
+  margin:8px}.foto_main{margin-bottom:5pc}.foto_main a img{
   width:100%}.foto_main a .hover{
   display:none;
   cursor:pointer;

@@ -76,6 +76,14 @@ body {
 
 /* base template (header and footer)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.main-container{
+  background-image: url("../images/m_back.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 830px;
+  background-position-x: center;
+}
 .vertical-align-middle {
     display: inline-block;
     vertical-align: middle;
@@ -429,7 +437,6 @@ text-align: center;
   .services{
     text-align: center;
     padding-top: 10px;
-    background-color: white;
     padding-bottom: 120px;
     .line{
       border-bottom: 3px solid #89d2d5;
@@ -514,7 +521,6 @@ text-align: center;
     }
   }
   .training{
-    background-color: white;
     color: #596979;
     text-align: center;
     padding-top: 10px;
@@ -571,7 +577,6 @@ text-align: center;
     }
   }
   .reviews{
-    background-color: white;
     color: #596979;
     text-align: center;
     padding-top: 10px;
@@ -671,7 +676,6 @@ text-align: center;
   }
   .news{
     margin-top: 30px;
-    background-color: white;
     color: #596979;
     text-align: center;
     padding-top: 10px;
@@ -888,6 +892,74 @@ text-align: center;
 }
 /* contacts template
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.contacts{
+  text-align: center;
+  .banner{
+    width: 100%;
+    text-align: center;
+    background-color: #E2E5E7;
+    position: relative;
+    .caption{
+      bottom: -4em;
+      width: 50%;
+      left: 25%;
+      background-color: #f2d90f;
+      position: absolute;
+      height: 100px;
+      vertical-align: middle;
+      h3{
+        margin-top: 1.5em;
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 3px dotted white;
+        color: white;
+      }
+    }
+  }
+  .path{
+    text-align: left;
+    margin-top: 80px;
+  }
+  .marker{
+    position: relative;
+    display: inline-block;
+    background-color: #3CCFCF;
+    border-radius: 100px;
+    width: 36px;
+    height: 36px;
+    padding: 10px 10px;
+    img{
+      position: absolute;
+      left: 7px;
+      top: 7px;
+      -webkit-filter: brightness(100) saturate(0) contrast(100);
+    }
+  }
+  .buttons{
+    display: inline-block;
+    width: 250px;
+    .button{
+      img{
+        -webkit-filter: hue-rotate(115deg) contrast(0.62)
+      }
+    }
+
+  }
+  .map{
+    width: 100%;
+  }
+  .comm{
+    margin-bottom: 40px;
+    background-color: #89d2d5;
+    h3{
+      border-bottom: 2px solid white;
+    }
+    input{
+      display: inline-block;
+      margin: 8px;
+    }
+  }
+}
 /* foto and video template
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .foto_main{

@@ -3,5 +3,42 @@
     Контакты
 {% endblock %}
 {% block content %}
-    contacts
+<div class="contacts">
+  <div class="banner">
+    <img src="{{ STATIC_URL }}images/cont_banner.png" alt="" />
+    <div class="caption">
+      <h3>НАШИ КОНТАКТЫ</h3>
+    </div>
+  </div>
+  <div class="container">
+    <div class="path">
+      <h5>Главная > Новости</h5>
+    </div>
+    <h2>ВЛАДИМИР АЛМАЗОВ</h2>
+    <div class="marker">
+      <img src="{{ STATIC_URL }}images/marker_call.png">
+    </div>
+
+    <h3>8 (931) 266-40-77</h3>
+    <div class="marker">
+      <img src="{{ STATIC_URL }}images/marker_mail.png">
+    </div>
+    <h3>info@artdog.ru</h3>
+    <div class="buttons row">
+      <a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_inst.png" alt="instagram" /></a>
+      <a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_vk.png" alt="vk" /></a>
+      <a href="" class="col-md-4 col-sm-4 col-xs-4 button"><img src="{{ STATIC_URL }}images/i_yout.png" alt="youtube" /></a>
+    </div>
+  </div>
+  <img src="{{ STATIC_URL }}images/map.png" class="map">
+  <div class="container comm">
+    <h3>НАПИШИТЕ НАМ</h3>
+    <input type="text" size="100">
+    <input type="text" size="100">
+    <input type="text" size="100">
+    <textarea name="comment" cols="100" rows="8"></textarea></p>
+    <p>Поля, отмеченные *, обязательны для заполнения</p>
+    <input type="submit" value="НАПИСАТЬ">
+  </div>
+</div>
 {% endblock %}
