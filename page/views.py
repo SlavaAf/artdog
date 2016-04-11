@@ -18,7 +18,17 @@ def contacts_view(request):
 
 def photo_and_video_view(request):
     object_list = []
-    return render(request, 'fotoandvideo.html', {'object_list': object_list})
+    return render(request, 'foto_index.html', {'object_list': object_list})
+
+
+def photo_albums_view(request):
+    object_list = []
+    return render(request, 'foto_albums.html', {'object_list': object_list})
+
+
+def photo_view(request):
+    object_list = []
+    return render(request, 'foto_albums_inside.html', {'object_list': object_list})
 
 
 def services_view(request):

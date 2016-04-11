@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}
+    Фото и Видео
+{% endblock %}
+{% block content %}
+    <div class="col-lg-12 prew">
+        <img src="{{ STATIC_URL }}images/dog_1_par_100.png">
+        <button><span>фото и видео</span></button>
+    </div>
+    <div class="col-lg-12 col-md-12 foto_main">
+        <div class="back_c"></div>
+        <div class="back_b"></div>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="{% url 'index' %}">Главная</a></li>
+                <li class="active">Фото и видео</li>
+            </ol>
+            {% block foto_content %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

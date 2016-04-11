@@ -1,0 +1,21 @@
+{% extends 'base_foto.html' %}
+{% block title %}
+    Фото
+{% endblock %}
+{% block foto_content %}
+    <div class="back_c1"></div>
+    <div class="back_c2"></div>
+    <div class="back_b1"></div>
+    <div class="col-md-4 col-lg-4 img">
+        <img src="{{ STATIC_URL }}images/foto_albums_1.png">
+    </div>
+    <div class="col-md-4 col-lg-4 img">
+        <img src="{{ STATIC_URL }}images/foto_albums_2.png">
+    </div>
+    <div class="col-md-4 col-lg-4 img">
+        <img src="{{ STATIC_URL }}images/foto_albums_3.png">
+    </div>
+    <div class="col-md-12 col-lg-12 img img-long">
+        <img src="{{ STATIC_URL }}images/foto_albums_3.png">
+    </div>
+{% endblock %}

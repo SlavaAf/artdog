@@ -1,0 +1,52 @@
+{% extends 'base_foto.html' %}
+{% block title %}
+    Альбомы
+{% endblock %}
+{% block foto_content %}
+    <div class="back_c1"></div>
+    <div class="back_c2"></div>
+    <div class="back_b1"></div>
+    <a class="col-md-4 col-lg-4" href="{% url 'photo' %}">
+        <div class="album">
+            <img src="{{ STATIC_URL }}images/foto_albums_2.png">
+            <div class="footer">
+                <h3>бигль</h3>
+            </div>
+        </div>
+    </a>
+    <a class="col-md-4 col-lg-4" href="{% url 'photo' %}">
+        <div class="album">
+            <img src="{{ STATIC_URL }}images/foto_albums_1.png">
+            <div class="footer">
+                <h3>доберманы</h3>
+            </div>
+        </div>
+    </a>
+    <a class="col-md-4 col-lg-4" href="{% url 'photo' %}">
+        <div class="album">
+            <img src="{{ STATIC_URL }}images/foto_albums_3.png">
+            <div class="footer">
+                <h3>немецкая овчарка</h3>
+            </div>
+        </div>
+    </a>
+    <nav>
+        <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true"><img src="{{ STATIC_URL }}images/paginator_l.png"></span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true"><img src="{{ STATIC_URL }}images/paginator_r.png"></span>
+          </a>
+        </li>
+        </ul>
+    </nav>
+{% endblock %}

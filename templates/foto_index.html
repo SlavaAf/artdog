@@ -1,0 +1,48 @@
+{% extends 'base_foto.html' %}
+{% block title %}
+    Фото и Видео
+{% endblock %}
+{% block foto_content %}
+    <div class="col-lg-4 col-md-4 photos">
+        <a href="{% url 'photo_albums' %}">
+            <img src="{{ STATIC_URL }}images/foto_main_fotos.png">
+            <div class="hover">
+                <img src="{{ STATIC_URL }}images/foto_main_eye.png">
+                <p>посмотреть<br>альбом</p>
+                <img src="{{ STATIC_URL }}images/foto_main_arrow.png">
+            </div>
+        </a>
+        <div class="footer">
+            <h4>фотографии</h4>
+            <p>134 фотографии</p>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 videos">
+        <a href="">
+            <img src="{{ STATIC_URL }}images/foto_main_video.png">
+            <div class="hover">
+                <img src="{{ STATIC_URL }}images/foto_main_eye.png">
+                <p>посмотреть<br>альбом</p>
+                <img src="{{ STATIC_URL }}images/foto_main_arrow.png">
+            </div>
+        </a>
+        <div class="footer">
+            <h4>видеозаписи</h4>
+            <p>94 видеозаписи</p>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 clients">
+        <a href="">
+            <img src="{{ STATIC_URL }}images/foto_main_client.png">
+            <div class="hover">
+                <img src="{{ STATIC_URL }}images/foto_main_eye.png">
+                <p>посмотреть<br>альбом</p>
+                <img src="{{ STATIC_URL }}images/foto_main_arrow.png">
+            </div>
+        </a>
+        <div class="footer">
+            <h4>наши клиенты</h4>
+            <p>146 фотографий</p>
+        </div>
+    </div>
+{% endblock %}
