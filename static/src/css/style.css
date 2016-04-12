@@ -223,9 +223,24 @@ header {
         text-decoration: none;
         border-bottom: solid 5px rgb(242,217,15);
       }
+      .hover-none:hover{
+        padding-top: 10px;
+        padding-bottom: 0px;
+        font-weight: normal;
+        text-decoration: none;
+        border-bottom: none;
+      }
+      .hovered{
+        padding-top: 10px!important;
+        padding-bottom: 0px!important;
+        font-weight: bold!important;
+        text-decoration: none!important;
+        border-bottom: solid 5px rgb(242,217,15)!important;
+      }
     }
 
     .dropdown-menu{
+      left:-9px;
       margin-top: 0px;
       border: none;
       border-radius:0;
@@ -257,8 +272,15 @@ background-color: rgb(137,210,213);
 text-align: center;
   .row{
     text-align: left;
+    position: relative;
   }
   .up{
+    position: absolute;;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 70px;
+
     padding: 5px 5px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -266,16 +288,28 @@ text-align: center;
     background-color: rgb(88,104,120);
     img{
       padding: 5px 5px;
+      padding-bottom: 13px;
     }
     span{
+      display: inline-block;
+      font-size: 14pt;
+      padding-top: 17px;
+      padding-left: 18px;
       color: white;
     }
   }
   .buttons{
+    margin-bottom: 45px;
+    margin-top: 45px;
     padding-top: 5px;
     text-align: center;
+    .button{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     img{
       -webkit-filter: brightness(10) contrast(10) grayscale(1);
+      width: 50px;
     }
     a:hover{
       img{
@@ -286,10 +320,14 @@ text-align: center;
 
   .menu{
     background: none;
+    margin-top: 31px;
     .container{
+      width: 1280px;
+      padding-left: 120px;
+      padding-right: 80px;
       border-bottom: 1px solid white;
-      padding-bottom: 15px;
-      margin-bottom: 15px;
+      padding-bottom: 29px;
+      margin-bottom: 50px;
       .row{
         padding-left: 0;
       }
@@ -364,7 +402,7 @@ text-align: center;
     }
   }
   .copyright{
-    height: 40px;
+    height: 92px;
     position: relative;
     background-color: rgb(88,104,120);
     text-align:center;
@@ -607,7 +645,7 @@ text-align: center;
   .reviews{
     color: #596979;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 60px;
     .line{
       border-bottom: 3px solid #89d2d5;
       width: 40%;
@@ -686,7 +724,7 @@ text-align: center;
       text-decoration: none;
       background-color: #89d2d5;
       color: white;
-      margin: 10px;
+      margin: 60px 10px;
       padding: 20px 50px;
       font-family: 'PT Sans', sans-serif;
       font-weight: 300;
@@ -711,6 +749,7 @@ text-align: center;
       height: 422px;
     }
     .dropdown:hover{
+      z-index: 10;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
       .label2{
         .date{
@@ -771,7 +810,7 @@ text-align: center;
       }
       .label2{
         text-align: left;
-
+        background-color: white;
         h3{
           min-height: 1em;
           min-width: 90%;
