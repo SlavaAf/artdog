@@ -1326,6 +1326,80 @@ text-align: center;
 }
 /* services template
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.service_main{
+  .text{
+    text-align: center;
+    margin-bottom: 30px;
+    p{
+      text-align: left;
+      font-size: 1.80rem;
+      b{
+        color: #586878;
+        display: block;
+        border-bottom: 2px solid rgb( 88, 104, 120 );
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+    }
+    h2{
+      text-transform: uppercase;
+      color: #5ac3b7;
+      text-align: center;
+      border-bottom: 2px solid;
+      padding-bottom: 10px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .time{
+      width: auto;
+      margin-bottom: 35px;
+    }
+    h3{
+      color: #f4825d;
+      text-align: center;
+      margin-top: 0;
+      line-height: 1.5;
+      b{
+        display: block;
+      }
+    }
+    ul{
+      text-align: left;
+      color: #586878;
+      font-size: 1.8rem;
+      margin-bottom: 50px;
+    }
+  }
+  .img_back{
+    padding: 0;
+    margin-bottom: 30px;
+    img{
+      width: 100%;
+    }
+    .col-md-4{
+      position: absolute;
+      right: 0;
+      top: 70%;
+      background-color: #5ac3b7;
+      padding: 20px 30px 20px 30px;
+      p{
+        font-size: 1.8rem;
+        color: #fff;
+        border-left: 2px solid;
+        padding-left: 15px;
+        margin: 0;
+      }
+    }
+  }
+  .img_content{
+    img{
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+  }
+}
 /* modal template
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .modal-content{

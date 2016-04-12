@@ -698,7 +698,51 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   cursor:pointer}.review_main .ot .gipo{
   position:absolute;
   bottom:0;
-  left:15%}.modal-content{background-color:#89d2d5}.modal-content .modal-header{
+  left:15%}.service_main .text{
+  text-align:center;
+  margin-bottom:30px}.service_main .text p{
+  text-align:left;
+  font-size:1.8rem}.service_main .text p b{
+  color:#586878;
+  display:block;
+  border-bottom:2px solid #586878;
+  padding-bottom:15px;
+  margin-bottom:15px}.service_main .text h2{
+  text-transform:uppercase;
+  color:#5ac3b7;
+  text-align:center;
+  border-bottom:2px solid;
+  padding-bottom:10px;
+  width:60%;
+  margin-left:auto;
+  margin-right:auto}.service_main .text .time{
+  width:auto;
+  margin-bottom:35px}.service_main .text h3{
+  color:#f4825d;
+  text-align:center;
+  margin-top:0;
+  line-height:1.5}.service_main .text h3 b{
+  display:block}.service_main .text ul{
+  text-align:left;
+  color:#586878;
+  font-size:1.8rem;
+  margin-bottom:50px}.service_main .img_back{
+  padding:0;
+  margin-bottom:30px}.service_main .img_back img{
+  width:100%}.service_main .img_back .col-md-4{
+  position:absolute;
+  right:0;
+  top:70%;
+  background-color:#5ac3b7;
+  padding:20px 30px}.service_main .img_back .col-md-4 p{
+  font-size:1.8rem;
+  color:#fff;
+  border-left:2px solid;
+  padding-left:15px;
+  margin:0}.service_main .img_content img{
+  width:100%;
+  height:auto;
+  margin-bottom:15px}.modal-content{background-color:#89d2d5}.modal-content .modal-header{
   border:none;
   text-align:center}.modal-content .modal-header .close{
   font-size:5rem;
