@@ -27,7 +27,7 @@ body {
   overflow-y: auto;
   img{
     width: 100%;
-    height: 330px; 
+    height: 330px;
     position: absolute;
     top: 0;
     /*bottom: 0;*/
@@ -102,7 +102,14 @@ header {
   .container{
     padding-top: 20px;
   }
+  .container {
+    padding-left: 0;
+    padding-top: 15px;
+    width: 1230px;
+  }
   .contacts{
+    width: 536px;
+    padding-bottom: 10px;
     .element{
       display: inline-block;
       background-repeat: no-repeat;
@@ -110,7 +117,7 @@ header {
       padding-left: 0;
       span{
         color: white;
-        padding-left: 30px;
+        padding-left: 34px;
         font-size: 18pt;
         font-family: 'PT Sans', sans-serif;
         position: relative;
@@ -118,9 +125,20 @@ header {
     }
     .phone{
       background-image: url("../images/marker_call.png");
+      width: 239px;
+      span{
+        display: inline-block;
+        padding-top: 5px;
+        padding-left: 35px;
+      }
     }
     .mail{
       background-image: url("../images/marker_mail.png");
+      span{
+        display: inline-block;
+        padding-top: 5px;
+        padding-left: 20px;
+      }
     }
   }
   .logo{
@@ -131,19 +149,20 @@ header {
     }
   }
   .buttons{
+    padding: 0 18px;
+    margin-left: -27px;
     border: 3px;
     border-color: white;
     border-top-style: none!important;
     border-bottom-style: none!important;
     text-align: center;;
-    padding: 0 10px;
     .button{
       padding-left: 5px;
       padding-right: 5px;
     }
     img{
       -webkit-filter: brightness(10) contrast(10) grayscale(1);
-      margin: 10px 2px;
+      margin: 7px 2px;
     }
     a:hover{
       img{
@@ -152,17 +171,25 @@ header {
     }
   }
   .places{
+    margin-left: 19px;
     display: inline-block;
     background-image: url("../images/marker_bone.png");
     background-repeat: no-repeat;
     background-position: left center;
-    a p{
+    a{
       text-align: left;
+      display: inline-block;
+      padding-left: 4px;
+    }
+    a p{
+      margin-top: 5px;
+      display: inline-block;
       font-weight: bold;
       color: rgb(88,104,120);
       margin-bottom: 0;
       padding-left: 35px;
-      font-size: 12pt;
+      font-size: 14pt;
+      line-height: 0;
       font-family: 'PT Sans', sans-serif;
       position: relative;
     }
@@ -172,6 +199,7 @@ header {
 .menu{
   background: white;
   .container{
+    width: 970px;
     .row{
       margin-bottom: 0;
       padding-left: 0;
@@ -1103,7 +1131,7 @@ text-align: center;
       h3{
         width: 90%;
         padding-top: 45px;
-        padding-bottom: 10px; 
+        padding-bottom: 10px;
         margin-top: 0;
         margin-left: auto;
         margin-right: auto;
@@ -1181,7 +1209,7 @@ text-align: center;
       padding: 0;
       .icon_rev{
         border-radius: 50%;
-        border: 15px solid; 
+        border: 15px solid;
         overflow: hidden;
         width: 155px;
         height: 155px;
@@ -1205,7 +1233,7 @@ text-align: center;
       padding-right: 70px;
       border-left: 2px solid #89d2d5;
       padding-left: 70px;
-    }  
+    }
   }
   .rev:hover{
     border-color: #f2d90f;
