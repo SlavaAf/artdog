@@ -196,6 +196,33 @@
 			</div>
 		</footer>
 
+        <div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="Review">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Написать отзыв</h4>
+              </div>
+              <div class="modal-body">
+                  <div class="image-prev">
+{#                      <img src="{{ STATIC_URL }}" alt="нет фото">#}
+                      <span>нет фото</span>
+                  </div>
+                  <div class="upload-img">
+                      <img src="{{ STATIC_URL }}images/upload_img.png">
+                      <a>загрузить фото</a>
+                  </div>
+                  <form>
+                    <input class="name form-control" type="text" name="name" placeholder="Ваше имя">
+                    <textarea name="mess" placeholder="Ваше сообщение" class="form-control" rows="7"></textarea>
+                    <input class="btn" type="button" name="btn" value="ОТПРАВИТЬ">
+                  </form>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+
     <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
     <script src="{{ STATIC_URL }}js/_app.js"></script>
