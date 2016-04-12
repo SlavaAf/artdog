@@ -92,7 +92,18 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   padding-bottom:0;
   font-weight:700;
   text-decoration:none;
-  border-bottom:5px solid #f2d90f}.menu .container .dropdown-menu{
+  border-bottom:5px solid #f2d90f}.menu .container li .hover-none:focus,.menu .container li .hover-none:hover{
+  padding-top:10px;
+  padding-bottom:0;
+  font-weight:400;
+  text-decoration:none;
+  border-bottom:none}.menu .container li .hovered{
+  padding-top:10px!important;
+  padding-bottom:0!important;
+  font-weight:700!important;
+  text-decoration:none!important;
+  border-bottom:5px solid #f2d90f!important}.menu .container .dropdown-menu{
+  left:-9px;
   margin-top:0;
   border:none;
   border-radius:0;
@@ -109,22 +120,42 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   text-decoration:none;
   border:none!important;
   margin-bottom:0}footer{float:left;width:100%;background-color:#89d2d5;text-align:center}footer .row{
-  text-align:left}footer .up{
+  text-align:left;
+  position:relative}footer .up{
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:200px;
+  height:70px;
   padding:5px;
   margin-top:10px;
   margin-bottom:10px;
   text-align:center;
   background-color:#586878}footer .up img{
-  padding:5px}footer .up span{
+  padding:5px;
+  padding-bottom:13px}footer .up span{
+  display:inline-block;
+  font-size:14pt;
+  padding-top:17px;
+  padding-left:18px;
   color:#fff}footer .buttons{
+  margin-bottom:45px;
+  margin-top:45px;
   padding-top:5px;
-  text-align:center}footer .buttons img{
-  -webkit-filter:brightness(10) contrast(10) grayscale(1)}footer .buttons a:focus img,footer .buttons a:hover img{
+  text-align:center}footer .buttons .button{
+  padding-left:20px;
+  padding-right:20px}footer .buttons img{
+  -webkit-filter:brightness(10) contrast(10) grayscale(1);
+  width:50px}footer .buttons a:focus img,footer .buttons a:hover img{
   -webkit-filter:none}footer .menu{
-  background:none}footer .menu .container{
+  background:none;
+  margin-top:31px}footer .menu .container{
+  width:80pc;
+  padding-left:90pt;
+  padding-right:5pc;
   border-bottom:1px solid #fff;
-  padding-bottom:15px;
-  margin-bottom:15px}footer .menu .container .row{
+  padding-bottom:29px;
+  margin-bottom:50px}footer .menu .container .row{
   padding-left:0}footer .menu .container li{
   text-align:center;
   list-style:none}footer .menu .container li a{
@@ -168,7 +199,7 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   font-size:1pc;
   font-family:PT Sans,sans-serif;
   position:relative}footer .copyright{
-  height:40px;
+  height:92px;
   position:relative;
   background-color:#586878;
   text-align:center;
@@ -306,7 +337,7 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   font-size:1pc}.index .reviews{
   color:#596979;
   text-align:center;
-  padding-top:10px}.index .reviews .line{
+  padding-top:60px}.index .reviews .line{
   border-bottom:3px solid #89d2d5;
   width:40%;
   margin-bottom:10px;
@@ -352,7 +383,7 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   text-decoration:none;
   background-color:#89d2d5;
   color:#fff;
-  margin:10px;
+  margin:60px 10px;
   padding:20px 50px;
   font-family:PT Sans,sans-serif;
   font-weight:300;
@@ -367,6 +398,7 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   text-align:center;
   padding-top:10px}.index .news .dropdown{
   height:422px}.index .news .dropdown:focus,.index .news .dropdown:hover{
+  z-index:4;
   box-shadow:0 0 10px rgba(0,0,0,.5)}.index .news .dropdown:focus .label2 .date,.index .news .dropdown:hover .label2 .date{
   display:inline-block}.index .news .line{
   margin-bottom:15px;
@@ -401,7 +433,8 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   font-size:14pt;
   display:inherit}.index .news .row .label .date{
   margin-top:10px}.index .news .row .label2{
-  text-align:left}.index .news .row .label2 h3{
+  text-align:left;
+  background-color:#fff}.index .news .row .label2 h3{
   min-height:1em;
   min-width:90%;
   display:inline-block;

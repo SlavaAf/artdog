@@ -4,6 +4,6 @@ $(document).ready(function(){
       $('.dropdown-toggle', this).toggleClass("hovered");
     });
     $('#myCarousel').carousel({
-	    interval: 10000
-	})
+	    interval: 10000 
+	});
 });
