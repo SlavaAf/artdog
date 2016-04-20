@@ -3,6 +3,10 @@
     Фото и Видео
 {% endblock %}
 {% block foto_content %}
+    <ol class="breadcrumb">
+        <li><a href="{% url 'index' %}">Главная</a></li>
+        <li class="active">Фото и видео</li>
+    </ol>
     <div class="col-lg-4 col-md-4 photos">
         <a href="{% url 'photo_albums' %}">
             <img src="{{ STATIC_URL }}images/foto_main_fotos.png">
@@ -18,7 +22,7 @@
         </div>
     </div>
     <div class="col-lg-4 col-md-4 videos">
-        <a href="">
+        <a href="{% url 'video_albums' %}">
             <img src="{{ STATIC_URL }}images/foto_main_video.png">
             <div class="hover">
                 <img src="{{ STATIC_URL }}images/foto_main_eye.png">

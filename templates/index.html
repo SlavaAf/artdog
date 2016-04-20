@@ -66,62 +66,62 @@
         </div>
         <div class="row">
           <div class="col-md-3 element">
-            <a href="#">
-              <div class="dropdown"><p>подробнее</p></div>
+{#            <a>#}
+              <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
               <img src="{{STATIC_URL}}images/i_uslugi_1.png" alt="...">
               <h4>Дрессировка<br>собак</h4>
-            </a>
+{#            </a>#}
           </div>
           <div class="col-md-3 element">
-            <a href="#">
-              <div class="dropdown"><p>подробнее</p></div>
+{#            <a href="#">#}
+              <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
               <img src="{{STATIC_URL}}images/i_uslugi_2.png" alt="...">
               <h4>Дрессировка<br>щенков</h4>
-            </a>
+{#            </a>#}
           </div>
           <div class="col-md-3 element">
-            <a href="#">
-              <div class="dropdown"><p>подробнее</p></div>
+{#            <a href="#">#}
+              <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
               <img src="{{STATIC_URL}}images/i_uslugi_3.png" alt="...">
               <h4>IPO. ОКД. ЗКС</h4>
-            </a>
+{#            </a>#}
           </div>
           <div class="col-md-3 element">
-            <a href="#">
-              <div class="dropdown"><p>подробнее</p></div>
+{#            <a href="#">#}
+              <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
               <img src="{{STATIC_URL}}images/i_uslugi_4.png" alt="...">
               <h4>Коррекция<br>поведения</h4>
-            </a>
+{#            </a>#}
           </div>
         </div>
         <div class="row">
           <div class="col-md-3 element">
-            <a href="#">
-              <div class="dropdown"><p>подробнее</p></div>
+{#            <a href="#">#}
+              <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
               <img src="{{STATIC_URL}}images/i_uslugi_5.png" alt="...">
               <h4>охрана<br>семьи</h4>
-            </a>
+{#            </a>#}
           </div>
           <div class="col-md-3 element">
-            <a href="#">
-              <div class="dropdown"><p>подробнее</p></div>
+{#            <a href="#">#}
+              <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
               <img src="{{STATIC_URL}}images/i_uslugi_6.png" alt="...">
               <h4>Групповые<br>занятия</h4>
-            </a>
+{#            </a>#}
           </div>
           <div class="col-md-3 element">
-            <a href="#">
-              <div class="dropdown"><p>подробнее</p></div>
+{#            <a href="#">#}
+              <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
               <img src="{{STATIC_URL}}images/i_uslugi_7.png" alt="...">
               <h4>Стационарная<br>дрессировка</h4>
-            </a>
+{#            </a>#}
           </div>
           <div class="col-md-3 element">
-            <a href="#">
-              <div class="dropdown"><p>подробнее</p></div>
+{#            <a href="#">#}
+              <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
               <img src="{{STATIC_URL}}images/i_uslugi_8.png" alt="...">
               <h4>зоогостинциа</h4>
-            </a>
+{#            </a>#}
           </div>
         </div>
       </div>
@@ -142,7 +142,7 @@
     <div class="training">
       <div class="container">
         <div class="caption">
-          <h3>ТРЕНИРОВКИ</h3>
+          <h3>наши ТРЕНИРОВКИ</h3>
           <div class="line"></div>
         </div>
         <div class="photos">
@@ -169,13 +169,13 @@
               </div>
             </div>
           </div>
-          <a href="">
+          <a href="{% url 'photo_albums' %}">
             <span>ПЕРЕЙТИ В ФОТОАЛЬБОМ</span>
           </a>
         </div>
         <div class="videos">
           <img src="{{STATIC_URL}}images/trainings_video.png" alt="" />
-          <a href="">
+          <a href="{% url 'video_albums' %}">
             <span>ВСЕ ВИДЕОЗАПИСИ</span>
           </a>
         </div>
@@ -194,47 +194,63 @@
             <img src="{{STATIC_URL}}images/news_dog_1.png" alt="" />
             <div class="label">
               <h3>НОВЫЕ ВИДЕО НАШЕЙ ШКОЛЫ!</h3>
-              <span>вы можете просмотреть новые видео<br>с резудьтатами наших маленьких учеников</span>
-              <span class="date">17.01.2016</span>
+              <span>Вы можете просмотреть новые видео<br>с резудьтатами наших маленьких учеников</span>
+              <span class="date">17.01.2016
+                <a href="#"><img src="{{ STATIC_URL }}images/i_r_w.png"></a>
+              </span>
             </div>
           </div>
-          <div class="col-md-4 dropdown">
+          <div class="col-md-4">
             <img src="{{STATIC_URL}}images/news_dog_2.png" alt="" />
-            <div class="label2">
-              <h3>НОВЫЕ ВИДЕО НАШЕЙ ШКОЛЫ!</h3>
-              <span>пополнился наш раздел с фотографиями четвероногих клиентов!</span>
-              <span class="date">17.01.2016</span>
+            <div class="label2_w">
+              <h3>Новые фотографии в разделе Наши Клиенты!</h3>
+              <span>Пополнился наш раздел с фотографиями четвероногих клиентов!</span>
+              <span class="date">17.01.2016
+                <a href="#"><img src="{{ STATIC_URL }}images/i_r.png"></a>
+              </span>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 dropdown">
-            <img src="{{STATIC_URL}}images/news_dog_3.png" alt="" />
+              <div class="img">
+                <img src="{{STATIC_URL}}images/news_dog_3.png" alt="" />
+              </div>
             <div class="label2">
               <h3>НОВЫЕ ФОТОГРАФИИ В РАЗДЕЛЕ НАШИ КЛИЕНТЫ!</h3>
-              <span>пополнился наш раздел с фотографиями</span>
-              <span class="date">17.01.2016</span>
+              <span>Пополнился наш раздел с фотографиями</span>
+              <span class="date">17.01.2016
+                <a href="#"><img src="{{ STATIC_URL }}images/i_r.png"></a>
+              </span>
             </div>
           </div>
           <div class="col-md-4 dropdown">
-            <img src="{{STATIC_URL}}images/news_dog_4.png" alt="" />
+              <div class="img">
+                <img src="{{STATIC_URL}}images/news_dog_4.png" alt="" />
+              </div>
             <div class="label2">
               <h3>НОВЫЕ ФОТОГРАФИИ В РАЗДЕЛЕ НАШИ КЛИЕНТЫ!</h3>
-              <span>пополнился наш раздел с фотографиями</span>
-              <span class="date">17.01.2016</span>
+              <span>Пополнился наш раздел с фотографиями</span>
+              <span class="date">17.01.2016
+                <a href="#"><img src="{{ STATIC_URL }}images/i_r.png"></a>
+              </span>
             </div>
           </div>
           <div class="col-md-4 dropdown">
-            <img src="{{STATIC_URL}}images/news_dog_5.png" alt="" />
+              <div class="img">
+                <img src="{{STATIC_URL}}images/news_dog_5.png" alt="" />
+              </div>
             <div class="label2">
               <h3>НОВЫЕ ФОТОГРАФИИ В РАЗДЕЛЕ НАШИ КЛИЕНТЫ!</h3>
-              <span>пополнился наш раздел с фотографиями</span>
-              <span class="date">17.01.2016</span>
+              <span>Пополнился наш раздел с фотографиями</span>
+              <span class="date">17.01.2016
+                <a href="#"><img src="{{ STATIC_URL }}images/i_r.png"></a>
+              </span>
             </div>
           </div>
 
         </div>
-        <a href="" class="button">
+        <a href="{% url 'news' %}" class="button">
           <span>ВСЕ НОВОСТИ</span>
         </a>
       </div>

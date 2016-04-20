@@ -6,30 +6,39 @@
     <ol class="breadcrumb">
         <li><a href="{% url 'index' %}">Главная</a></li>
         <li><a href="{% url 'photo_and_video' %}">Фото и видео</a></li>
-        <li class="active">Фотографии</li>
+        <li class="active">Видео</li>
     </ol>
     <div class="back_c1"></div>
     <div class="back_c2"></div>
     <div class="back_b1"></div>
-    <a class="col-md-4 col-lg-4" href="{% url 'photo' %}">
-        <div class="album">
-            <img src="{{ STATIC_URL }}images/foto_albums_2.png">
+    <a class="col-md-4 col-lg-4" href="#">
+        <div class="album_v">
+            <div class="img_top">
+                <img src="{{ STATIC_URL }}images/play_video_x.png" class="play">
+                <img src="{{ STATIC_URL }}images/foto_albums_2.png" class="dog">
+            </div>
             <div class="footer">
                 <h3>бигль</h3>
             </div>
         </div>
     </a>
-    <a class="col-md-4 col-lg-4" href="{% url 'photo' %}">
-        <div class="album">
-            <img src="{{ STATIC_URL }}images/foto_albums_1.png">
+    <a class="col-md-4 col-lg-4" href="#">
+        <div class="album_v">
+            <div class="img_top">
+                <img src="{{ STATIC_URL }}images/play_video_x.png" class="play">
+                <img src="{{ STATIC_URL }}images/foto_albums_1.png" class="dog">
+            </div>
             <div class="footer">
                 <h3>доберманы</h3>
             </div>
         </div>
     </a>
-    <a class="col-md-4 col-lg-4" href="{% url 'photo' %}">
-        <div class="album">
-            <img src="{{ STATIC_URL }}images/foto_albums_3.png">
+    <a class="col-md-4 col-lg-4" href="#">
+        <div class="album_v">
+            <div class="img_top">
+                <img src="{{ STATIC_URL }}images/play_video_x.png" class="play">
+                <img src="{{ STATIC_URL }}images/foto_albums_3.png" class="dog">
+            </div>
             <div class="footer">
                 <h3>немецкая овчарка</h3>
             </div>

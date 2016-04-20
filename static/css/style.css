@@ -15,11 +15,47 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   bottom:0}.prew button span{
   color:#fff;
   font-size:1.7rem;
-  border-bottom:2px dashed;
+  border-bottom:2px dotted;
   text-transform:uppercase}.prew button:focus{
   outline:0}.breadcrumb{margin-top:30px;margin-bottom:55px;background-color:inherit}.breadcrumb li+li:before{
   content:">"}.breadcrumb .active,.breadcrumb a{
-  color:#828283}.main-container{background-image:url(../images/m_back.png);background-size:100%;background-repeat:no-repeat;background-position-y:830px;background-position-x:center}.vertical-align-middle{display:inline-block;vertical-align:middle;float:none;margin-right:-4px}header{text-align:center;min-height:9pc;padding-bottom:2pc;background-color:#fff;background-image:url(../images/x_back_border.png),url(../images/x_back.png);background-repeat:repeat-x,repeat;background-clip:border-box,border-box;background-position:0 100%,0 0}header .container{
+  color:#828283}.our_clients{text-align:center;background-color:#f5f7f8;padding-top:30px;padding-bottom:60px}.our_clients .container{
+  overflow:hidden}.our_clients .c_logo{
+  width:auto;
+  display:block;
+  margin-left:auto;
+  margin-right:auto}.our_clients h3{
+  color:#92d6d8;
+  text-transform:uppercase;
+  margin-bottom:30px;
+  width:40%;
+  position:relative;
+  margin-right:auto;
+  margin-left:auto}.our_clients h3:before{
+  left:100%}.our_clients h3:after,.our_clients h3:before{
+  content:'';
+  height:2px;
+  width:100%;
+  background-color:#92d6d8;
+  position:absolute;
+  top:50%}.our_clients h3:after{
+  right:100%}.our_clients img{
+  width:100%}.our_clients .col-md-4{
+  margin-bottom:60px}.our_clients a{
+  width:250px;
+  height:70px;
+  text-align:center;
+  font-size:1.8rem;
+  text-transform:uppercase;
+  color:#fff;
+  background-color:#92d6d8;
+  display:block;
+  clear:both;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:22px}.our_clients a:focus,.our_clients a:hover{
+  text-decoration:none}.bones_dog{text-align:center;padding-top:30px;padding-bottom:30px}.bones_dog img{
+  width:auto}.main-container{background-image:url(../images/m_back.png);background-size:100%;background-repeat:no-repeat;background-position-y:830px;background-position-x:center}.vertical-align-middle{display:inline-block;vertical-align:middle;float:none;margin-right:-4px}header{text-align:center;min-height:9pc;padding-bottom:2pc;background-color:#fff;background-image:url(../images/x_back_border.png),url(../images/x_back.png);background-repeat:repeat-x,repeat;background-clip:border-box,border-box;background-position:0 100%,0 0}header .container{
   padding-top:20px;
   padding-left:0;
   padding-top:15px;
@@ -242,13 +278,15 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   margin:0 30px;
   margin-bottom:20px;
   text-transform:uppercase;
-  border-bottom:1px solid #000}.index .banner .carousel-caption .inner p{
-  text-transform:lowercase}.index .banner .carousel-control{
+  border-bottom:1px solid #000;
+  color:#596979}.index .banner .carousel-caption .inner p{
+  text-transform:lowercase;
+  color:#596979}.index .banner .carousel-control{
   background-image:none}.index .banner .carousel-control img{
   position:absolute;
   top:50%}.index .services{
   text-align:center;
-  padding-top:10px;
+  padding-top:25px;
   padding-bottom:90pt}.index .services .line{
   border-bottom:3px solid #89d2d5;
   width:150px;
@@ -275,28 +313,32 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   position:relative;
   text-transform:uppercase;
   color:#000;
-  padding-bottom:20px}.index .services .element a:focus,.index .services .element a:hover{
-  text-decoration:none}.index .services .element a:focus img,.index .services .element a:hover img{
+  padding-bottom:20px}.index .services .element a:focus p,.index .services .element a:hover p{
+  color:#596979}.index .services .element:focus,.index .services .element:hover{
+  text-decoration:none}.index .services .element:focus img,.index .services .element:hover img{
   z-index:3;
-  -webkit-filter:hue-rotate(190deg) saturate(3)}.index .services .element a:focus h4,.index .services .element a:hover h4{
+  -webkit-filter:hue-rotate(190deg) saturate(3)}.index .services .element:focus h4,.index .services .element:hover h4{
   z-index:3;
-  color:#ff9b6e}.index .services .element a:focus .dropdown,.index .services .element a:hover .dropdown{
+  color:#ff9b6e}.index .services .element:focus .dropdown,.index .services .element:hover .dropdown{
   display:block}.index .about{
   background-color:#f5f7f8;
   color:#596979;
   text-align:center;
-  padding-top:10px}.index .about .container{
+  padding-top:25px}.index .about .container{
   width:850px}.index .about .line{
   border-bottom:3px solid #f4825d;
   width:150px;
   display:inline-block}.index .about h3{
-  margin-bottom:0}.index .about span{
-  display:inline-block;
-  text-align:justify;
+  margin-bottom:0;
+  color:#333843;
+  text-transform:uppercase}.index .about span{
+  display:block;
+  text-align:left;
   font-family:Roboto,sans-serif;
-  font-size:14pt;
+  font-size:1.6rem;
   margin-top:20px;
-  margin-bottom:40px}.index .training{
+  margin-bottom:40px;
+  font-weight:400}.index .training{
   color:#596979;
   text-align:center;
   padding-top:10px}.index .training .line{
@@ -305,7 +347,8 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   width:150px;
   margin-bottom:10px;
   display:inline-block}.index .training h3{
-  margin-bottom:0}.index .training span{
+  margin-bottom:0;
+  text-transform:uppercase}.index .training span{
   display:inline-block;
   text-align:justify;
   font-family:Roboto,sans-serif;
@@ -321,20 +364,26 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   padding:20px 50px;
   font-family:PT Sans,sans-serif;
   font-weight:300;
-  font-size:1pc}.index .training .videos{
+  font-size:1pc}.index .training .photos a span{
+  background:url(../images/i_foto.png) no-repeat left 1px;
+  padding-left:35px}.index .training .photos a:focus,.index .training .photos a:hover{
+  box-shadow:.5px .866px 1pc 0 #939597;
+  cursor:pointer}.index .training .videos{
   float:right;
   width:49%;
   background-color:#f5f7f8}.index .training .videos img{
   width:561px}.index .training .videos a{
   display:inline-block;
   background-color:#f2d90f;
-  color:#fff;
+  color:#333843;
   padding:10px;
   margin:10px;
   padding:20px 50px;
   font-family:PT Sans,sans-serif;
   font-weight:300;
-  font-size:1pc}.index .reviews{
+  font-size:1pc}.index .training .videos a:focus,.index .training .videos a:hover{
+  box-shadow:.5px .866px 1pc 0 #939597;
+  cursor:pointer}.index .reviews{
   color:#596979;
   text-align:center;
   padding-top:60px}.index .reviews .line{
@@ -392,15 +441,20 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   width:200px;
   display:block;
   padding-top:5px;
-  padding-left:20px}.index .news{
+  padding-left:20px}.index .reviews .button:focus,.index .reviews .button:hover{
+  box-shadow:.5px .866px 1pc 0 #939597;
+  cursor:pointer}.index .news{
   margin-top:30px;
   color:#596979;
   text-align:center;
   padding-top:10px}.index .news .dropdown{
   height:422px}.index .news .dropdown:focus,.index .news .dropdown:hover{
   z-index:4;
-  box-shadow:0 0 10px rgba(0,0,0,.5)}.index .news .dropdown:focus .label2 .date,.index .news .dropdown:hover .label2 .date{
-  display:inline-block}.index .news .line{
+  box-shadow:0 4px 13px 0 #0f1010}.index .news .dropdown:focus .img img,.index .news .dropdown:hover .img img{
+  width:110%;
+  margin-left:-5%;
+  margin-top:-5%}.index .news .dropdown:focus .label2 .date,.index .news .dropdown:hover .label2 .date{
+  display:block}.index .news .line{
   margin-bottom:15px;
   margin-top:15px;
   border-bottom:3px solid #f4825d;
@@ -415,7 +469,9 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   font-family:PT Sans,sans-serif;
   font-weight:300;
   font-size:1pc;
-  margin:10px}.index .news .row .label{
+  margin:10px}.index .news .button:focus,.index .news .button:hover{
+  box-shadow:.5px .866px 1pc 0 #939597;
+  cursor:pointer}.index .news .row .label{
   text-align:left;
   height:10pc;
   position:absolute;
@@ -425,31 +481,83 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   bottom:0;
   margin-bottom:0}.index .news .row .label h3{
   display:inline-block;
-  border-bottom:2px solid #fff}.index .news .row .label h3,.index .news .row .label span{
+  border-bottom:2px solid #fff;
+  font-size:1.8rem;
+  text-transform:uppercase;
+  font-weight:700}.index .news .row .label h3,.index .news .row .label span{
   margin-left:40px;
   margin-right:40px;
   padding-bottom:10px;
   margin-bottom:10px}.index .news .row .label span{
-  font-size:14pt;
-  display:inherit}.index .news .row .label .date{
-  margin-top:10px}.index .news .row .label2{
+  display:inherit;
+  font-size:1.6rem;
+  font-weight:400}.index .news .row .label .date{
+  margin-top:10px;
+  font-size:1.4rem;
+  display:block}.index .news .row .label .date a img{
+  float:right;
+  width:auto}.index .news .row .img{
+  width:100%;
+  height:245px;
+  overflow:hidden}.index .news .row .img img{
+  width:100%}.index .news .row .label2{
   text-align:left;
   background-color:#fff}.index .news .row .label2 h3{
   min-height:1em;
   min-width:90%;
   display:inline-block;
-  border-bottom:2px solid #5ac3b7}.index .news .row .label2 h3,.index .news .row .label2 span{
+  border-bottom:2px solid #5ac3b7;
+  font-size:1.8rem;
+  color:#586878;
+  text-transform:uppercase;
+  font-weight:700}.index .news .row .label2 h3,.index .news .row .label2 span{
   margin-left:20px;
   margin-right:20px;
   padding-bottom:10px;
   margin-bottom:10px}.index .news .row .label2 span{
-  font-size:14pt;
-  display:inherit}.index .news .row .label2 .date{
+  font-size:1.6rem;
+  display:inherit;
+  color:#a9a9a9}.index .news .row .label2 span a img{
+  float:right;
+  width:auto}.index .news .row .label2 .date{
   margin-top:0;
   margin-bottom:0;
   padding-bottom:5px;
   padding-top:10px;
-  display:none}.index .news .row>div{
+  display:none;
+  color:#586878;
+  font-size:1.4rem;
+  font-style:italic}.index .news .row .label2_w{
+  text-align:left;
+  background-color:#fff}.index .news .row .label2_w h3{
+  min-height:1em;
+  min-width:90%;
+  margin-left:20px;
+  margin-right:20px;
+  padding-bottom:10px;
+  margin-bottom:10px;
+  display:inline-block;
+  border-bottom:2px solid #5ac3b7;
+  font-size:1.8rem;
+  color:#586878;
+  text-transform:uppercase;
+  font-weight:700}.index .news .row .label2_w span{
+  font-size:1.6rem;
+  display:inherit;
+  margin-left:20px;
+  margin-right:20px;
+  padding-bottom:10px;
+  margin-bottom:10px;
+  color:#a9a9a9}.index .news .row .label2_w span a img{
+  float:right;
+  width:auto}.index .news .row .label2_w .date{
+  margin-top:0;
+  margin-bottom:0;
+  padding-bottom:5px;
+  padding-top:10px;
+  color:#586878;
+  font-size:1.4rem;
+  font-style:italic}.index .news .row>div{
   padding-left:0;
   padding-right:0;
   margin-bottom:20px}.index .news .row img{
@@ -472,46 +580,7 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   margin-left:auto}.about_main .pp:last-child{
   margin-bottom:60px}.about_main .down_img{
   width:100%;
-  margin-bottom:30px}.about_main .our_clients{
-  text-align:center;
-  background-color:#f5f7f8;
-  padding-top:30px;
-  padding-bottom:60px}.about_main .our_clients .container{
-  overflow:hidden}.about_main .our_clients .c_logo{
-  width:auto;
-  display:block;
-  margin-left:auto;
-  margin-right:auto}.about_main .our_clients h3{
-  color:#92d6d8;
-  text-transform:uppercase;
-  margin-bottom:30px;
-  width:40%;
-  position:relative;
-  margin-right:auto;
-  margin-left:auto}.about_main .our_clients h3:before{
-  left:100%}.about_main .our_clients h3:after,.about_main .our_clients h3:before{
-  content:'';
-  height:2px;
-  width:100%;
-  background-color:#92d6d8;
-  position:absolute;
-  top:50%}.about_main .our_clients h3:after{
-  right:100%}.about_main .our_clients img{
-  width:100%}.about_main .our_clients .col-md-4{
-  margin-bottom:60px}.about_main .our_clients a{
-  width:250px;
-  height:70px;
-  text-align:center;
-  font-size:1.8rem;
-  text-transform:uppercase;
-  color:#fff;
-  background-color:#92d6d8;
-  display:block;
-  clear:both;
-  margin-left:auto;
-  margin-right:auto;
-  padding-top:22px}.about_main .our_clients a:focus,.about_main .our_clients a:hover{
-  text-decoration:none}.contacts{text-align:center}.contacts .banner{
+  margin-bottom:30px}.contacts{text-align:center}.contacts .banner{
   width:100%;
   text-align:center;
   background-color:#e2e5e7;
@@ -637,11 +706,43 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   margin-right:auto;
   text-transform:uppercase;
   color:#f4825d;
-  border-bottom:1px solid}.foto_main a:focus,.foto_main a:hover{
-  text-decoration:none;
-  cursor:pointer}.foto_main a:focus .album,.foto_main a:hover .album{
+  border-bottom:1px solid}.foto_main a:focus .album,.foto_main a:hover .album{
   box-shadow:5px 8.66px 27px 0 #394140}.foto_main a:focus .album .footer,.foto_main a:hover .album .footer{
   background-color:#f4825d}.foto_main a:focus .album .footer h3,.foto_main a:hover .album .footer h3{
+  color:#fff;
+  text-decoration:none}.foto_main .album_v .img_top{
+  overflow:hidden;
+  height:360px;
+  position:relative;
+  text-align:center}.foto_main .album_v .dog{
+  width:100%}.foto_main .album_v .play{
+  z-index:4;
+  width:auto;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto}.foto_main .album_v .footer{
+  height:125px;
+  margin-top:0;
+  background-color:#f5f9fd}.foto_main .album_v .footer h3{
+  width:90%;
+  padding-top:45px;
+  padding-bottom:10px;
+  margin-top:0;
+  margin-left:auto;
+  margin-right:auto;
+  text-transform:uppercase;
+  color:#89d2d5;
+  border-bottom:1px solid}.foto_main a:focus,.foto_main a:hover{
+  text-decoration:none;
+  cursor:pointer}.foto_main a:focus .album_v,.foto_main a:hover .album_v{
+  box-shadow:5px 8.66px 27px 0 #394140}.foto_main a:focus .album_v .dog,.foto_main a:hover .album_v .dog{
+  width:110%;
+  margin-left:-5%;
+  margin-top:-5%}.foto_main a:focus .album_v .footer,.foto_main a:hover .album_v .footer{
+  background-color:#89d2d5}.foto_main a:focus .album_v .footer h3,.foto_main a:hover .album_v .footer h3{
   color:#fff;
   text-decoration:none}.foto_main nav{
   clear:both;
@@ -737,7 +838,43 @@ html{position:relative;min-height:100%}body{min-height:500px;font-family:PT Sans
   cursor:pointer}.review_main .ot .gipo{
   position:absolute;
   bottom:0;
-  left:15%}.service_main .text{
+  left:15%}.service_main .services{
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:90pt}.service_main .services .line{
+  border-bottom:3px solid #89d2d5;
+  width:150px;
+  display:inline-block}.service_main .services h3{
+  margin-bottom:0}.service_main .services .element .dropdown{
+  box-shadow:0 0 10px rgba(0,0,0,.5);
+  display:none;
+  z-index:2;
+  position:absolute;
+  background-color:#f5f7f8;
+  height:20pc;
+  width:90%;
+  text-align:center}.service_main .services .element .dropdown p{
+  color:#a9a9a9;
+  text-decoration:underline;
+  display:inline-block;
+  border-top:3px solid #ff9b6e;
+  padding-top:30px;
+  margin-top:15pc;
+  width:50%}.service_main .services .element img{
+  position:relative;
+  padding-top:20px;
+  padding-bottom:30px}.service_main .services .element h4{
+  position:relative;
+  text-transform:uppercase;
+  color:#000;
+  padding-bottom:20px}.service_main .services .element a:focus p,.service_main .services .element a:hover p{
+  color:#596979}.service_main .services .element:focus,.service_main .services .element:hover{
+  text-decoration:none}.service_main .services .element:focus img,.service_main .services .element:hover img{
+  z-index:3;
+  -webkit-filter:hue-rotate(190deg) saturate(3)}.service_main .services .element:focus h4,.service_main .services .element:hover h4{
+  z-index:3;
+  color:#ff9b6e}.service_main .services .element:focus .dropdown,.service_main .services .element:hover .dropdown{
+  display:block}.service_main .text{
   text-align:center;
   margin-bottom:30px}.service_main .text p{
   text-align:left;

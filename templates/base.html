@@ -86,9 +86,9 @@
 {#                    <a href="#">ОТЗЫВЫ</a>#}
                 </li>
                 <li class="col-md-2 col-sm-4 col-xs-12 dropdown">
-                    <a class="dropdown-toggle hover-none" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ФОТО И ВИДЕО</a>
+                    <a class="dropdown-toggle hover-none" data-toggle="dropdown" href="{% url 'photo_and_video' %}" role="button" aria-haspopup="true" aria-expanded="false">ФОТО И ВИДЕО</a>
                     <ul class="dropdown-menu">
-                        <li class="col-md-12 col-sm-12 col-xs-12 inner"><a href="#">ФОТОГРАФИИ</a></li>
+                        <li class="col-md-12 col-sm-12 col-xs-12 inner"><a href="{% url 'photo_albums' %}">ФОТОГРАФИИ</a></li>
                         <li class="col-md-12 col-sm-12 col-xs-12 inner"><a href="#">ВИДЕО</a></li>
                     </ul>
                 </li>

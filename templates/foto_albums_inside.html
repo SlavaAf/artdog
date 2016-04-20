@@ -3,6 +3,11 @@
     Фото
 {% endblock %}
 {% block foto_content %}
+    <ol class="breadcrumb">
+        <li><a href="{% url 'index' %}">Главная</a></li>
+        <li><a href="{% url 'photo_and_video' %}">Фото и видео</a></li>
+        <li class="active">Фотографии</li>
+    </ol>
     <div class="back_c1"></div>
     <div class="back_c2"></div>
     <div class="back_b1"></div>

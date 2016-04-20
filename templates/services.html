@@ -4,162 +4,105 @@
 {% endblock %}
 {% block content %}
     <div class="col-lg-12 col-md-12 prew">
-        <img src="{{ STATIC_URL }}images/dog_4_par_100.png">
-        <button><span>Дрессировка собак</span></button>
+        <img src="{{ STATIC_URL }}images/dog_3_par_100.png">
+        <button><span>Наши услуги</span></button>
     </div>
     <div class="col-lg-12 col-md-12 service_main">
         <div class="container">
             <ol class="breadcrumb">
                 <li><a href="{% url 'index' %}">Главная</a></li>
-                <li class="active">Дрессировка собак</li>
+                <li class="active">Наши услуги</li>
             </ol>
-            <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text">
-                <p>
-                    <b>
-                        Любой человек, решивший завести собаку, должен понимать, что он берет на себя ответственность за животное. Для того, чтобы ваше совместное существование с собакой было действительно комфортным, просто кормить и выгуливать животное недостаточно. Необходимо, чтобы собака признавала в вас хозяина, беспрекословно подчинялась и умела выполнять хотя бы самые простые команды. 
-                    </b>
-                        Существует устойчивое (и полностью ошибочное) мнение, что дрессировать нужно только щенков и молодых собак крупных пород. На самом деле, дрессировать нужно любую собаку — умение подчиняться, выполнять команды и хорошо вести себя в любой ситуации необходимо животному вне зависимости от его размеров, возраста и породы. 
-                    <br>
-                    <br>
-                        Дрессировке поддаются не только щенки, возраст которых составляет 3-4 месяца — взрослые собаки тоже довольно легко учатся выполнять сначала простые, а потом и более сложные команды — нужно только найти к ним верный подход. 
-                </p>
-            </div>
-            <div class="col-lg-12 col-md-12 img_back">
-                <img src="{{ STATIC_URL }}images/service_back_1.png">
-                <div class="col-md-4 col-lg-4">
-                    <p>
-                        Результат становится заметен уже
-                        <br>
-                        <b>
-                            после 1-2-х занятий
-                        </b>
-                        с собакой
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text">
-                <p>
-                    Именно этим и занимается профессиональный дрессировщик. Как правило, начальный, самый простой курс дрессировки включает в себя 6 базовых команд: сидеть, место, рядом, лежать, фу и ко мне. Отличного знания и умения выполнять эти команды хватит для того, чтобы ваша собака комфортно чувствовала себя в городской среде, а вы не переживали и не беспокоились о ее поведении. 
-                <br>
-                <br>
-                    Для обучения этим командам достаточно 3-5 занятий, в зависимости от возраста и особенностей характера животного. 
-                <br>
-                <br>
-                    Если вы хотите, чтобы собака действительно научилась вас слушаться и выполняла команды правильно, не стоит дрессировать животное самостоятельно — лучше обратиться к специалисту.
-                </p>
-            </div>
-            <div class="col-lg-12 col-md-12 img_content">
-                <div class="col-md-4 col-lg-4">
-                    <img src="{{ STATIC_URL }}images/service_img_1.png">
-                    <img src="{{ STATIC_URL }}images/service_img_3.png">
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <img src="{{ STATIC_URL }}images/service_img_2.png">
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <img src="{{ STATIC_URL }}images/service_img_3.png">
-                    <img src="{{ STATIC_URL }}images/service_img_5.png">
-                </div>
-            </div>
-            <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text">
-                <h2>Признаки действительно хорошей школы дрессировки:</h2>
-                <ul>
-                    <li>Результат становится заметен уже после одного-двух занятий с собакой;</li>
-                    <li>После 5 посещений школы хозяин отмечает значительное изменение поведения собаки;</li>
-                    <li>Собака обучается не только выполнению команд, но и взаимодействию с хозяином. Послушание — один из важнейших аспектов дрессировки;</li>
-                    <li>Дрессировщик работает с собаками любой породы и любого возраста: ничто из этого не является препятствием для успешной дрессировки;</li>
-                    <li>Перед тем, как приступить к курсу дрессировки, специалист внимательно анализирует поведение и состояние собаки, составляет программу в зависимости от особенностей конкретного животного. </li>
-                    <li>Дрессировка осуществляется индивидуально, специалист может выехать на дом (или в любое другое удобное место) в подходящее для владельца животного время.</li>
-                </ul>
-                <img src="{{ STATIC_URL }}images/service_time.png" class="time">
-                <h3>Занятие длится в среднем <b>1,5 часа</b></h3>
-            </div>
         </div>
-        <div class="col-lg-12 col-md-12 slider">
+        <div class="services">
+          <div class="container">
+            <div class="caption">
+              <img src="{{STATIC_URL}}images/uslugi_top.png" alt="" />
+              <h3>НАШИ УСЛУГИ</h3>
+              <div class="line"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 element">
+    {#            <a>#}
+                  <div class="dropdown"><a href="{% url 'dress_dog' %}"><p>подробнее</p></a></div>
+                  <img src="{{STATIC_URL}}images/i_uslugi_1.png" alt="...">
+                  <h4>Дрессировка<br>собак</h4>
+    {#            </a>#}
+              </div>
+              <div class="col-md-3 element">
+    {#            <a href="#">#}
+                  <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
+                  <img src="{{STATIC_URL}}images/i_uslugi_2.png" alt="...">
+                  <h4>Дрессировка<br>щенков</h4>
+    {#            </a>#}
+              </div>
+              <div class="col-md-3 element">
+    {#            <a href="#">#}
+                  <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
+                  <img src="{{STATIC_URL}}images/i_uslugi_3.png" alt="...">
+                  <h4>IPO. ОКД. ЗКС</h4>
+    {#            </a>#}
+              </div>
+              <div class="col-md-3 element">
+    {#            <a href="#">#}
+                  <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
+                  <img src="{{STATIC_URL}}images/i_uslugi_4.png" alt="...">
+                  <h4>Коррекция<br>поведения</h4>
+    {#            </a>#}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 element">
+    {#            <a href="#">#}
+                  <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
+                  <img src="{{STATIC_URL}}images/i_uslugi_5.png" alt="...">
+                  <h4>охрана<br>семьи</h4>
+    {#            </a>#}
+              </div>
+              <div class="col-md-3 element">
+    {#            <a href="#">#}
+                  <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
+                  <img src="{{STATIC_URL}}images/i_uslugi_6.png" alt="...">
+                  <h4>Групповые<br>занятия</h4>
+    {#            </a>#}
+              </div>
+              <div class="col-md-3 element">
+    {#            <a href="#">#}
+                  <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
+                  <img src="{{STATIC_URL}}images/i_uslugi_7.png" alt="...">
+                  <h4>Стационарная<br>дрессировка</h4>
+    {#            </a>#}
+              </div>
+              <div class="col-md-3 element">
+    {#            <a href="#">#}
+                  <div class="dropdown"><a href="#"><p>подробнее</p></a></div>
+                  <img src="{{STATIC_URL}}images/i_uslugi_8.png" alt="...">
+                  <h4>зоогостинциа</h4>
+    {#            </a>#}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our_clients">
             <div class="container">
-                <h3>Вам также может быть интересно</h3>
-                <div id="myCarousel" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="span3">
-                              <a href="" class="">
-                                  <img src="{{ STATIC_URL }}images/service_slider_1.png">
-                                  <span>
-                                    ОХРАНА<br>СЕМЬИ
-                                  </span>
-                              </a>
-                            </div>
-                            <div class="span3">
-                              <a href="" class="">
-                                  <img src="{{ STATIC_URL }}images/service_slider_2.png">
-                                  <span>
-                                    ГРУППОВЫЕ<br>ЗАНЯТИЯ
-                                  </span>
-                              </a>
-                            </div>
-                            <div class="span3">
-                              <a href="" class="">
-                                  <img src="{{ STATIC_URL }}images/service_slider_3.png">
-                                  <span>
-                                    Стационарная<br>дрессировка
-                                  </span>
-                              </a>
-                            </div>
-                            <div class="span3">
-                              <a href="" class="">
-                                  <img src="{{ STATIC_URL }}images/service_slider_4.png">
-                                  <span>
-                                    Зоогостиница
-                                  </span>
-                              </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="span3">
-                              <a href="" class="">
-                                  <img src="{{ STATIC_URL }}images/service_slider_1.png">
-                                  <span>
-                                    ОХРАНА<br>СЕМЬИ
-                                  </span>
-                              </a>
-                            </div>
-                            <div class="span3">
-                              <a href="" class="">
-                                  <img src="{{ STATIC_URL }}images/service_slider_2.png">
-                                  <span>
-                                    ГРУППОВЫЕ<br>ЗАНЯТИЯ
-                                  </span>
-                              </a>
-                            </div>
-                            <div class="span3">
-                              <a href="" class="">
-                                  <img src="{{ STATIC_URL }}images/service_slider_3.png">
-                                  <span>
-                                    Стационарная<br>дрессировка
-                                  </span>
-                              </a>
-                            </div>
-                            <div class="span3">
-                              <a href="" class="">
-                                  <img src="{{ STATIC_URL }}images/service_slider_4.png">
-                                  <span>
-                                    Зоогостиница
-                                  </span>
-                              </a>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <img src="{{ STATIC_URL }}images/arrow_left.png">
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <img src="{{ STATIC_URL }}images/arrow_right_hover.png">
-                    </a>
+                <img src="{{ STATIC_URL }}images/about_main_footprint.png" class="c_logo">
+                <h3>Некоторые из наших клиентов</h3>
+                <div class="col-md-4 col-lg-4">
+                    <img src="{{ STATIC_URL }}images/about_main_img1.png">
                 </div>
+                <div class="col-md-4 col-lg-4">
+                    <img src="{{ STATIC_URL }}images/about_main_img2.png">
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <img src="{{ STATIC_URL }}images/about_main_img3.png">
+                </div>
+                <a href="{% url 'photo_albums' %}">
+                    больше фотографий
+                </a>
             </div>
         </div>
-        <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text">
-            <h4>Ждем Вас в нашей школе дрессировки и развития собак Artdog.ru!</h4>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bones_dog">
+            <img src="{{ STATIC_URL }}images/bones_dog.png">
         </div>
     </div>
 {% endblock %}

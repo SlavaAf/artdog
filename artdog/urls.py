@@ -25,9 +25,11 @@ urlpatterns = [
     url(r'^contacts/$', contacts_view, name='contacts'),
     url(r'^photo-and-video/$', photo_and_video_view, name='photo_and_video'),
     url(r'^photo-and-video/photo$', photo_albums_view, name='photo_albums'),
+    url(r'^photo-and-video/video$', video_albums_view, name='video_albums'),
     url(r'^photo-and-video/albums/photo$', photo_view, name='photo'),
     url(r'^news/$', news_view, name='news'),
     url(r'^services/$', services_view, name='services'),
+    url(r'^services/dog/$', dress_dog_view, name='dress_dog'),
     url(r'^reviews/$', reviews_view, name='reviews'),
     url(r'^about/$', about_view, name='about'),
 ]

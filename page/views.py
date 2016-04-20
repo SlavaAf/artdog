@@ -26,6 +26,11 @@ def photo_albums_view(request):
     return render(request, 'foto_albums.html', {'object_list': object_list})
 
 
+def video_albums_view(request):
+    object_list = []
+    return render(request, 'video_albums.html', {'object_list': object_list})
+
+
 def photo_view(request):
     object_list = []
     return render(request, 'foto_albums_inside.html', {'object_list': object_list})
@@ -34,6 +39,11 @@ def photo_view(request):
 def services_view(request):
     object_list = []
     return render(request, 'services.html', {'object_list': object_list})
+
+
+def dress_dog_view(request):
+    object_list = []
+    return render(request, 'dress_dog.html', {'object_list': object_list})
 
 
 def reviews_view(request):
